@@ -1,16 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-link" data-tab="about">About Me</a></li>
+                <li><a href="#" class="tab-link" data-tab="portfolio">Portfolio</a></li>
+                <li><a href="#" class="tab-link" data-tab="experience">Experience</a></li>
+                <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
-    <h1>
-        Hey, I'm Andrew
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a programmer for fun.
-        </p>
-        <h2>What I'm working on</h2>
-        <p>
-            I'm obsessed with AI right now and i'm working on this portfolio right now.
-        </p>
-    </body>
+    <section id="about" class="tab-content active">
+        <h1>About Me</h1>
+        <img src="me.jpg" alt="Your Name" class="profile-pic">
+        <p><strong>Name:</strong> André Almeida</p>
+        <p><strong>Country:</strong> Portugal</p>
+        <p><strong>Age:</strong> 29</p>
+    </section>
+
+    <section id="portfolio" class="tab-content">
+        <h1>Portfolio</h1>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+        </div>
+        <div class="project">
+            <h2>Project 3</h2>
+            <p>Description of Project 3.</p>
+        </div>
+        <p>Currently working on: [Current Project]</p>
+    </section>
+
+    <section id="experience" class="tab-content">
+        <h1>Experience</h1>
+        <div class="job">
+            <h2>Company 1</h2>
+            <p>Role: [Your Role]</p>
+            <p>Duration: [Start Date - End Date]</p>
+        </div>
+        <div class="job">
+            <h2>Company 2</h2>
+            <p>Role: [Your Role]</p>
+            <p>Duration: [Start Date - End Date]</p>
+        </div>
+        <!-- Add more job experiences as needed -->
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h1>Contact</h1>
+        <p><strong>Email:</strong> your.email@example.com</p>
+        <p><strong>WhatsApp:</strong> (+351) 969 392 020</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/a-oli/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

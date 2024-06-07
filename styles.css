@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.profile-pic {
+    width: 10%;
+    height: 10%;
+    /* border-radius: 50%; */
+    margin-bottom: 1rem;
+}
+
+.project, .job {
+    margin: 1rem 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
