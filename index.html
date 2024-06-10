@@ -28,33 +28,34 @@
     </header>
 
     <main>
-      <section id="about" class="tab-content active">
-        <h1>About</h1>
-        <div class="details">
-          <p><strong>Name:</strong> André Almeida</p>
-          <p><strong>Country:</strong> Portugal</p>
-          <p><strong>Born:</strong> 20-06-1994</p>
+      <div class="image-container">
+        <img src="background.jpg" alt="André Almeida" class="landing-photo" />
+        <div class="overlay">
+          <h1>André Almeida</h1>
         </div>
+        <div class="overlay2">
+          <img src="me.jpg" alt="André Almeida" class="profile-pic" />
+        </div>
+      </div>
+      <section id="about" class="tab-content active">
         <div class="about-container">
           <div class="summary">
-            <h2>Summary</h2>
             <p>
-              I am André Almeida, a passionate programmer from Portugal with a
-              strong background in creating beautiful and functional projects
-              from web pages to games and even software. With a keen eye for
-              detail and a drive for excellence, I continuously strive to
-              improve my skills and deliver high-quality projects.
+              Hello, I'm André Almeida, a passionate programmer from Portugal
+              with a strong background in creating beautiful and functional
+              projects from web pages to games and even software. With a keen
+              eye for detail and a drive for excellence, I continuously strive
+              to improve my skills and deliver high-quality projects.
             </p>
           </div>
-          <img src="me.jpg" alt="André Almeida" class="profile-pic" />
+          
         </div>
 
         <div class="about-container">
-          <div class="summary">
+          <div class="contacts">
             <h2>Contacts</h2>
             <div>
               <p><strong>Email:</strong> almeida.andre.1994@gmail.com</p>
-              <p><strong>WhatsApp:</strong> (+351) 969 392 020</p>
               <p>
                 <strong>LinkedIn:</strong>
                 <a href="https://www.linkedin.com/in/a-oli/" target="_blank"
@@ -68,29 +69,119 @@
 
       <section id="skills" class="tab-content">
         <h1>Skills</h1>
-        <p>
-          <strong>Programming Languages</strong> TypeScript, JavaScript, HTML,
-          CSS, Python, Java, C/C#, PowerShell, PHP
-        </p>
-        <p>
+        <div class="skill">
+          <p>
+            <strong>Programming Languages</strong> TypeScript, JavaScript, HTML,
+            CSS, Python, Java, C/C#, PowerShell, PHP
+          </p>
           <strong>Frameworks</strong> React, Redux, Bootstrap, .Net, Laravel
-        </p>
-        <p><strong>Databases/ORM</strong> PostgreSQL, MySQL, SQLite</p>
-        <p>
-          <strong>Other</strong> Git, Bash, REST API, Data Structures and
-          Algorithms, GitHub, Azure, Amazon Web Services
-        </p>
+          <p><strong>Databases/ORM</strong> PostgreSQL, MySQL, SQLite</p>
+          <p></p>
+          <p><strong>Methodologies</strong> Scrum, Scrumban</p>
+          <p>
+            <strong>Other</strong> Git, Bash, REST API, Data Structures and
+            Algorithms, GitHub, Azure, Amazon Web Services, Docker
+          </p>
+        </div>
       </section>
 
       <section id="education" class="tab-content">
         <h1>Education</h1>
-        <p><strong>University of the Azores</strong></p>
-        <p>Bachelor's Degree - Computer Science (2019)</p>
-        
-        <h1>Courses</h1>
-        <p>Create web Applications with .Net Core, React and MobX</p>
-        <p>Cypress: Web Automation</p>
-        
+        <div class="education">
+          <h2>Formal</h2>
+          <p><strong>University of the Azores</strong></p>
+          <p>Bachelor's Degree - Computer Science (2019)</p>
+        </div>
+
+        <div class="education">
+          <h2>Courses</h2>
+          <p>
+            <strong
+              >Build web Applications with .Net Core, React and MobX</strong
+            >
+          </p>
+          <p><strong>Cypress: Web Automation</strong></p>
+        </div>
+      </section>
+
+      <section id="experience" class="tab-content">
+        <h1>Experience</h1>
+        <div class="job">
+          <h2>Ahau Software</h2>
+          <p>Full-Stack Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>October 2019 - March 2022</p>
+          </div>
+          <p class="bullet">
+            Developed and executed unitary and automated tests for the company's
+            REST API
+          </p>
+          <p class="bullet">
+            Contributed to refactoring and debugging a platform used in a chain
+            of libraries in Germany
+          </p>
+          <p class="bullet">
+            Integrated a team that developed an app for a French University and
+            server side scripts, using PowerShell, for cross-platform process
+            automation.
+          </p>
+          <p class="bullet">
+            Created features, with React, for the web application and Chromium
+            browser extension
+          </p>
+          <p class="bullet">
+            Developed unit tests and implemented automated testing using Cypress
+          </p>
+          <p class="bullet">
+            Created online documentation and recorded tutorials for the
+            company's new products.
+          </p>
+        </div>
+        <div class="job">
+          <h2>Cereal Games</h2>
+          <p>Game / Web Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>July 2019 - September 2019</p>
+          </div>
+          <p class="bullet">
+            Created a mobile game for kids using Unity and C#, and submitted to
+            the Apple and Google Play stores
+          </p>
+          <p class="bullet">
+            Conducted code maintenance and refactoring to optimize and enhance
+            existing systems.
+          </p>
+          <p class="bullet">
+            Assumed the role of a Technical Artist, integrating artistic
+            elements into technical processes for a cohesive product.
+          </p>
+          <p class="bullet">
+            Developed a Web Application and REST API using Laravel, HTML, CSS,
+            JavaScript, and MySQL.
+          </p>
+        </div>
+        <div class="job">
+          <h2>Cereal Games</h2>
+          <p>Game Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>October 2018 - February 2019</p>
+          </div>
+          <p class="bullet">
+            Developed a mobile game for use in district daycare centers, aimed
+            at educating children about recycling.
+          </p>
+          <p class="bullet">
+            Collaborated closely with the design team to create and modify game
+            assets, seamlessly incorporating them into the final product.
+          </p>
+          <p class="bullet">
+            Utilized C# and Unity for game mechanics, XML for data storage, and
+            Scrum for project development.
+          </p>
+        </div>
       </section>
 
       <section id="portfolio" class="tab-content">
@@ -108,25 +199,6 @@
           <p>Description of Project 3.</p>
         </div>
         <p class="current-project">Currently working on: [Current Project]</p>
-      </section>
-
-      <section id="experience" class="tab-content">
-        <h1>Experience</h1>
-        <div class="job">
-          <h2>Ahau Software</h2>
-          <p><strong>Role:</strong> Full-Stack Developer (Intern)</p>
-          <p><strong>Duration:</strong> October 2019 - March 2022</p>
-        </div>
-        <div class="job">
-          <h2>Cereal Games</h2>
-          <p><strong>Role:</strong> Game / Web Developer (Intern)</p>
-          <p><strong>Duration:</strong> July 2019 - September 2019</p>
-        </div>
-        <div class="job">
-          <h2>Cereal Games</h2>
-          <p><strong>Role:</strong> Game Developer (Intern)</p>
-          <p><strong>Duration:</strong> October 2018 - February 2019</p>
-        </div>
       </section>
     </main>
 
