@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #000000;
+  background-color: #001e24;
 }
 
 header {
@@ -16,27 +16,39 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 5px;
 }
 
 nav {
-  width: 60vw;
-  padding: 5px 0 5px 0;
-  background: #000000;
+  width: 90%;
+  max-width: 60vw;
+  padding: 5px 0;
+  background: #001e24;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 1rem;
+}
+
+nav .menu {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding: 0.8rem;
 }
 
-nav ul li {
+nav .menu li {
   margin: 0;
 }
 
-nav ul li a {
+nav .menu li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -45,13 +57,24 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav .menu li a:hover,
+nav .menu li a.active {
   background-color: #f4f4f9;
-  color: #000000;
+  color: #001e24;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-right: 1rem;
 }
 
 main {
+  width: 90%;
   max-width: 60vw;
   margin: 0 auto;
   background: #fff;
@@ -65,32 +88,22 @@ main {
 
 .overlay {
   position: absolute;
-  top: 25%;
+  top: 65%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.overlay2 {
-  position: absolute;
-  top: 47%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .landing-photo {
   display: block;
-  max-width: 60vw;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -110,14 +123,15 @@ h1 {
   opacity: 1;
 }
 
-.job-details{
-    display: flex;
-    margin-bottom: 0.5rem;
-    justify-content: space-between;
+.job-details {
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
 }
 
 .about-container {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
@@ -131,11 +145,12 @@ h1 {
 .profile-pic {
   width: 150px;
   height: auto;
-  border-radius: 70px;
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-self: center;
 }
 
-.summary .contacts {
+.summary {
   flex: 1;
   text-align: justify;
   display: flex;
@@ -144,16 +159,15 @@ h1 {
 }
 
 .bullet {
-    text-align: justify;
+  text-align: justify;
 }
 
 .bullet:before {
-    content:"• ";
+  content: "• ";
 }
 
 .project,
 .job,
-.contact-details,
 .education,
 .skill {
   margin: 1rem 0;
@@ -163,8 +177,7 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project h2
- {
+.project h2 {
   margin-bottom: 0.2rem;
 }
 
@@ -173,11 +186,58 @@ h1 {
   font-style: italic;
 }
 
-.contact-details a {
-  color: #1a1a1a;
-  text-decoration: none;
+footer {
+  background: #001e24;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.contact-details a:hover {
-  text-decoration: underline;
+.footer-container {
+  width: 90%;
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-container .contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-container .contact-icons a {
+  font-size: 25px; /* Adjust size as needed */
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-container .contact-icons a:hover {
+  color: #575757;
+}
+
+@media (max-width: 880px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  nav .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav .menu li {
+      width: 100%;
+  }
+
+  nav .menu li a {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  nav .menu.show {
+      display: flex;
+  }
 }
