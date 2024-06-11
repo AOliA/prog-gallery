@@ -1,148 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="24" height="24" fill="white"/>
-                    <path d="M5 3C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5ZM19 19H5V5H19V19Z" fill="#000000"/>
-                    <path d="M8 17L10 15L8 13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 17L14 15L16 13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 19V5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <button class="menu-toggle" aria-label="Open Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="menu">
-                <li><a href="#" class="tab-link active" data-tab="about">About</a></li>
-                <li><a href="#" class="tab-link" data-tab="skills">Skills</a></li>
-                <li><a href="#" class="tab-link" data-tab="education">Education</a></li>
-                <li><a href="#" class="tab-link" data-tab="experience">Experience</a></li>
-                <li><a href="#" class="tab-link" data-tab="portfolio">Portfolio</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="24" height="24" fill="white" />
+            <path
+              d="M5 3C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5ZM19 19H5V5H19V19Z"
+              fill="#000000"
+            />
+            <path
+              d="M8 17L10 15L8 13"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16 17L14 15L16 13"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 19V5"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <button class="menu-toggle" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="menu">
+          <li>
+            <a href="#" class="tab-link active" data-tab="about">About</a>
+          </li>
+          <li><a href="#" class="tab-link" data-tab="skills">Skills</a></li>
+          <li>
+            <a href="#" class="tab-link" data-tab="education">Education</a>
+          </li>
+          <li>
+            <a href="#" class="tab-link" data-tab="experience">Experience</a>
+          </li>
+          <li>
+            <a href="#" class="tab-link" data-tab="portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="image-container">
-            <img src="background.jpg" alt="André Almeida" class="landing-photo" />
-            <div class="overlay">
-                <h1><strong>WELCOME TO MY PORTFOLIO</strong></h1>
-                <img src="me.jpg" alt="André Almeida" class="profile-pic" />
-            </div>
+      <div id="image-container" class="image-container">
+        <img src="background.jpg" alt="André Almeida" class="landing-photo" />
+        <div class="overlay">
+          <h1><strong>WELCOME TO MY PORTFOLIO</strong></h1>
+          <img src="me.jpg" alt="André Almeida" class="profile-pic" />
         </div>
-        <section id="about" class="tab-content active">
-            <h1>About</h1>
-            <div class="about-container">
-                <div class="summary">
-                    <p>Hello, I'm André Almeida, a passionate programmer from Portugal with a strong background in creating beautiful and functional projects from web pages to games and even software. With a keen eye for detail and a drive for excellence, I continuously strive to improve my skills and deliver high-quality projects.</p>
-                </div>
-            </div>
-        </section>
+      </div>
+      <section id="about" class="tab-content active">
+        <h1>About</h1>
+        <div class="about-container">
+          <div class="summary">
+            <p>
+              Hello, I'm André Almeida, a passionate programmer from Portugal
+              with a strong background in creating beautiful and functional
+              projects from web pages to games and even software. With a keen
+              eye for detail and a drive for excellence, I continuously strive
+              to improve my skills and deliver high-quality projects.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="skills" class="tab-content">
-            <h1>Skills</h1>
-            <div class="skill">
-                <p><strong>Programming Languages:</strong> TypeScript, JavaScript, HTML, CSS, Python, Java, C/C#, PowerShell, PHP</p>
-                <p><strong>Frameworks:</strong> React, Redux, Bootstrap, .Net, Laravel</p>
-                <p><strong>Databases/ORM:</strong> PostgreSQL, MySQL, SQLite</p>
-                <p><strong>Methodologies:</strong> Scrum, Scrumban</p>
-                <p><strong>Other:</strong> Git, Bash, REST API, Data Structures and Algorithms, GitHub, Azure, Amazon Web Services, Docker</p>
-            </div>
-        </section>
+      <section id="skills" class="tab-content">
+        <h1>Skills</h1>
+        <div class="skill">
+          <p>
+            <strong>Programming Languages:</strong> TypeScript, JavaScript,
+            HTML, CSS, Python, Java, C/C#, PowerShell, PHP
+          </p>
+          <p>
+            <strong>Frameworks:</strong> React, Redux, Bootstrap, .Net, Laravel
+          </p>
+          <p><strong>Databases/ORM:</strong> PostgreSQL, MySQL, SQLite</p>
+          <p><strong>Methodologies:</strong> Scrum, Scrumban</p>
+          <p>
+            <strong>Other:</strong> Git, Bash, REST API, Data Structures and
+            Algorithms, GitHub, Azure, Amazon Web Services, Docker
+          </p>
+        </div>
+      </section>
 
-        <section id="education" class="tab-content">
-            <h1>Education</h1>
-            <div class="education">
-                <p><strong>University of the Azores</strong></p>
-                <p>Bachelor's Degree - Computer Science (2019)</p>
-            </div>
-            <div class="education">
-                <p><strong>Build web Applications with .Net Core, React and MobX</strong></p>
-                <p><strong>Cypress: Web Automation</strong></p>
-            </div>
-        </section>
+      <section id="education" class="tab-content">
+        <h1>Education</h1>
+        <div class="education">
+          <p><strong>University of the Azores</strong></p>
+          <p>Bachelor's Degree - Computer Science (2019)</p>
+        </div>
+        <div class="education">
+          <p>
+            <strong
+              >Build web Applications with .Net Core, React and MobX</strong
+            >
+          </p>
+          <p><strong>Cypress: Web Automation</strong></p>
+        </div>
+      </section>
 
-        <section id="experience" class="tab-content">
-            <h1>Experience</h1>
-            <div class="job">
-                <h2>Ahau Software</h2>
-                <p>Full-Stack Developer (Intern)</p>
-                <div class="job-details">
-                    <p>Azores, Portugal</p>
-                    <p>October 2019 - March 2022</p>
-                </div>
-                <p class="bullet">Developed and executed unitary and automated tests for the company's REST API</p>
-                <p class="bullet">Contributed to refactoring and debugging a platform used in a chain of libraries in Germany</p>
-                <p class="bullet">Integrated a team that developed an app for a French University and server side scripts, using PowerShell, for cross-platform process automation.</p>
-                <p class="bullet">Created features, with React, for the web application and Chromium browser extension</p>
-                <p class="bullet">Developed unit tests and implemented automated testing using Cypress</p>
-                <p class="bullet">Created online documentation and recorded tutorials for the company's new products.</p>
-            </div>
-            <div class="job">
-                <h2>Cereal Games</h2>
-                <p>Game / Web Developer (Intern)</p>
-                <div class="job-details">
-                    <p>Azores, Portugal</p>
-                    <p>July 2019 - September 2019</p>
-                </div>
-                <p class="bullet">Created a mobile game for kids using Unity and C#, and submitted to the Apple and Google Play stores</p>
-                <p class="bullet">Conducted code maintenance and refactoring to optimize and enhance existing systems.</p>
-                <p class="bullet">Assumed the role of a Technical Artist, integrating artistic elements into technical processes for a cohesive product.</p>
-                <p class="bullet">Developed a Web Application and REST API using Laravel, HTML, CSS, JavaScript, and MySQL.</p>
-            </div>
-            <div class="job">
-                <h2>Cereal Games</h2>
-                <p>Game Developer (Intern)</p>
-                <div class="job-details">
-                    <p>Azores, Portugal</p>
-                    <p>October 2018 - February 2019</p>
-                </div>
-                <p class="bullet">Developed a mobile game for use in district daycare centers, aimed at educating children about recycling.</p>
-                <p class="bullet">Collaborated closely with the design team to create and modify game assets, seamlessly incorporating them into the final product.</p>
-                <p class="bullet">Utilized C# and Unity for game mechanics, XML for data storage, and Scrum for project development.</p>
-            </div>
-        </section>
+      <section id="experience" class="tab-content">
+        <h1>Experience</h1>
+        <div class="job">
+          <h2>Ahau Software</h2>
+          <p>Full-Stack Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>October 2019 - March 2022</p>
+          </div>
+          <p class="bullet">
+            Developed and executed unitary and automated tests for the company's
+            REST API
+          </p>
+          <p class="bullet">
+            Contributed to refactoring and debugging a platform used in a chain
+            of libraries in Germany
+          </p>
+          <p class="bullet">
+            Integrated a team that developed an app for a French University and
+            server side scripts, using PowerShell, for cross-platform process
+            automation.
+          </p>
+          <p class="bullet">
+            Created features, with React, for the web application and Chromium
+            browser extension
+          </p>
+          <p class="bullet">
+            Developed unit tests and implemented automated testing using Cypress
+          </p>
+          <p class="bullet">
+            Created online documentation and recorded tutorials for the
+            company's new products.
+          </p>
+        </div>
+        <div class="job">
+          <h2>Cereal Games</h2>
+          <p>Game / Web Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>July 2019 - September 2019</p>
+          </div>
+          <p class="bullet">
+            Created a mobile game for kids using Unity and C#, and submitted to
+            the Apple and Google Play stores
+          </p>
+          <p class="bullet">
+            Conducted code maintenance and refactoring to optimize and enhance
+            existing systems.
+          </p>
+          <p class="bullet">
+            Assumed the role of a Technical Artist, integrating artistic
+            elements into technical processes for a cohesive product.
+          </p>
+          <p class="bullet">
+            Developed a Web Application and REST API using Laravel, HTML, CSS,
+            JavaScript, and MySQL.
+          </p>
+        </div>
+        <div class="job">
+          <h2>Cereal Games</h2>
+          <p>Game Developer (Intern)</p>
+          <div class="job-details">
+            <p>Azores, Portugal</p>
+            <p>October 2018 - February 2019</p>
+          </div>
+          <p class="bullet">
+            Developed a mobile game for use in district daycare centers, aimed
+            at educating children about recycling.
+          </p>
+          <p class="bullet">
+            Collaborated closely with the design team to create and modify game
+            assets, seamlessly incorporating them into the final product.
+          </p>
+          <p class="bullet">
+            Utilized C# and Unity for game mechanics, XML for data storage, and
+            Scrum for project development.
+          </p>
+        </div>
+      </section>
 
-        <section id="portfolio" class="tab-content">
-            <h1>Portfolio</h1>
-            <div class="project">
-                <h2>Project 1</h2>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project">
-                <h2>Project 2</h2>
-                <p>Description of Project 2.</p>
-            </div>
-            <div class="project">
-                <h2>Project 3</h2>
-                <p>Description of Project 3.</p>
-            </div>
-            <p class="current-project">Currently working on: [Current Project]</p>
-        </section>
+      <section id="portfolio" class="tab-content">
+        <h1>Portfolio</h1>
+        <div class="project">
+          <h2>Project 1</h2>
+          <p>Description of Project 1.</p>
+        </div>
+        <div class="project">
+          <h2>Project 2</h2>
+          <p>Description of Project 2.</p>
+        </div>
+        <div class="project">
+          <h2>Project 3</h2>
+          <p>Description of Project 3.</p>
+        </div>
+        <p class="current-project">Currently working on: [Current Project]</p>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="contacts">
-                <div class="contact-icons">
-                    <a href="mailto:almeida.andre.1994@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://wa.me/351969392020" target="_blank" aria-label="WhatsApp"><i class="fas fa-phone"></i></a>
-                    <a href="https://www.linkedin.com/in/a-oli/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="contacts">
+          <div class="contact-icons">
+            <a href="mailto:almeida.andre.1994@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://wa.me/351969392020"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="fas fa-phone"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/a-oli/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
