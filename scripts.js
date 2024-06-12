@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Clear cache and local storage
+  if ('caches' in window) {
+    caches.keys().then(names => {
+      for (let name of names) {
+        caches.delete(name);
+      }
+    });
+  }
+  localStorage.clear();
+  sessionStorage.clear();
+
   const menuToggle = document.querySelector('.menu-toggle');
   const fullscreenMenu = document.querySelector('.fullscreen-menu');
   const menuClose = document.querySelector('.menu-close');
