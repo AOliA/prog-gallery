@@ -94,8 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  window.location.reload(true)
-
   // Adjust the tab content height on window resize
   window.addEventListener('resize', adjustTabContentHeight);
 
